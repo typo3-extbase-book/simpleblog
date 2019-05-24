@@ -1,0 +1,91 @@
+.tx-simpleblog ul.list-group {
+    margin-bottom: 1rem;
+}
+.tx-simpleblog .card {
+    margin-bottom: 1rem;
+}
+
+.tx-simpleblog {
+    background-color: #eeeeee;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1rem;
+}
+
+.tx-simpleblog-footer {
+    margin-top: 0.8rem;
+}
+
+/* CSS styles moved from setup.typoscript to simpleblog.css */
+textarea.f3-form-error {
+    background-color:#FF9F9F;
+    border: 1px #FF0000 solid;
+}
+
+input.f3-form-error {
+    background-color:#FF9F9F;
+    border: 1px #FF0000 solid;
+}
+
+.tx-simpleblog table {
+    border-collapse:separate;
+    border-spacing:10px;
+}
+
+.tx-simpleblog table th {
+    font-weight:bold;
+}
+
+.tx-simpleblog table td {
+    vertical-align:top;
+}
+
+ul.typo3-messages {
+    list-style: none;
+    padding: 0;
+}
+
+ul.typo3-messages .message-error {
+    color: red;
+}
+
+ul.typo3-messages .message-ok {
+    color: green;
+}
+
+.tx-simpleblog .btn-change-order {
+    margin-bottom: 0.4rem;
+}
+
+.tx-simpleblog .tags {
+    font-size: 1.2em;
+}
+
+.tx-simpleblog ul#comment-list {
+    margin-top: 1rem;
+}
+
+.tx-simpleblog .file-upload {
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.tx-simpleblog .card .card-img-wrap {
+    text-align: center;
+}
+
+.tx-simpleblog .card .card-img-wrap .card-img-top {
+    width: unset !important;
+}

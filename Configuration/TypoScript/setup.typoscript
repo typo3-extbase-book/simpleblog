@@ -1,0 +1,105 @@
+
+plugin.tx_simpleblog_bloglisting {
+    view {
+        templateRootPaths.0 = EXT:simpleblog/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_simpleblog_bloglisting.view.templateRootPath}
+        partialRootPaths.0 = EXT:simpleblog/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_simpleblog_bloglisting.view.partialRootPath}
+        layoutRootPaths.0 = EXT:simpleblog/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_simpleblog_bloglisting.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = 5
+        recursive = 1
+        classes {
+          ExtbaseBook\Simpleblog\Domain\Model\Blog {
+            newRecordStoragePid = 6
+          }
+          ExtbaseBook\Simpleblog\Domain\Model\Post {
+            newRecordStoragePid = 7
+          }
+          ExtbaseBook\Simpleblog\Domain\Model\Comment {
+            newRecordStoragePid = 8
+          }
+          ExtbaseBook\Simpleblog\Domain\Model\Tag {
+            newRecordStoragePid = 9
+          }
+          ExtbaseBook\Simpleblog\Domain\Model\Author {
+            mapping {
+              tableName = fe_users
+              columns {
+                name.mapOnProperty = fullname
+              }
+            }
+          }
+        }
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+      loginpage = 4
+      blog {
+        max = 10
+      }
+    }
+}
+
+page {
+    includeJSFooter {
+        mailto = EXT:simpleblog/Resources/Public/JavaScript/jquery.mailto.min.js
+        simpleblog = EXT:simpleblog/Resources/Public/JavaScript/simpleblog.js
+    }
+    includeCSS {
+        simpleblog = EXT:simpleblog/Resources/Public/Css/simpleblog.css
+    }
+}
+
+ajax = PAGE
+ajax {
+    typeNum = 1550786448
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders {
+            10.header = Content-type: application/json
+            20.header = Cache-control: Private
+        }
+        admPanel = 0
+        debug = 0
+    }
+    10 < tt_content.list.20.simpleblog_bloglisting
+}
+
+config.tx_extbase {
+  persistence {
+    classes {
+      ExtbaseBook\Simpleblog\Domain\Model\FileReference {
+        mapping {
+          tableName = sys_file_reference
+          columns {
+            uid_local.mapOnProperty = originalFileIdentifier
+          }
+        }
+      }
+      ExtbaseBook\Simpleblog\Domain\Model\Blog {
+        mapping.columns.crdate.mapOnProperty = crdate
+      }
+      ExtbaseBook\Simpleblog\Domain\Model\Post {
+        mapping.columns.crdate.mapOnProperty = crdate
+      }
+      ExtbaseBook\Simpleblog\Domain\Model\Comment {
+        mapping.columns.crdate.mapOnProperty = crdate
+      }
+    }
+  }
+  objects {
+    TYPO3\CMS\Extbase\Domain\Model\FileReference.className = ExtbaseBook\Simpleblog\Domain\Model\FileReference
+  }
+}

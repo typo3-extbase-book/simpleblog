@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+<file t3:id="1551944413" source-language="en" datatype="plaintext" original="messages" date="2019-03-23T00:23:42Z" product-name="simpleblog">
+<header/>
+<body>
+<trans-unit id="mlang_tabs_tab">
+<source>Simple Blog</source>
+</trans-unit>
+<trans-unit id="mlang_labels_tablabel">
+<source>Simple Blog</source>
+</trans-unit>
+<trans-unit id="mlang_labels_tabdescr">
+<source>Blog statistics and overview of comments</source>
+</trans-unit>
+</body>
+</file>
+</xliff>

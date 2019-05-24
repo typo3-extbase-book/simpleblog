@@ -1,0 +1,16 @@
+<f:be.pageRenderer
+
+	pageTitle="Simpleblog"
+
+	includeCssFiles="{
+		0: '{f:uri.resource(path:\'Css/Backend.css\')}'
+	}"
+
+	includeRequireJsModules="{
+		0: 'TYPO3/CMS/Simpleblog/Backend'
+	}"
+	/>
+
+<div class="tx-simpleblog">
+	<f:render section="content" />
+</div>

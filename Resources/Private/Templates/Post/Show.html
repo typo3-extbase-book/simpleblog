@@ -1,0 +1,52 @@
+{namespace simpleblog = ExtbaseBook\Simpleblog\ViewHelpers}
+<f:layout name="default" />
+<f:section name="content">
+<h1><f:translate key="post.headline.show" /></h1>
+<div class="card">
+  <h5 class="card-header">
+    {post.title}
+    <span class="float-right">
+      <f:format.date date="{post.postdate}" format="d/M/Y" />
+    </span>
+  </h5>
+  <div class="card-body">
+    <p class="card-text">
+      <f:format.nl2br>{post.content}</f:format.nl2br>
+    </p>
+    <p class="card-text">
+      <f:translate key="label.author" />: {post.author.fullname} - <simpleblog:emailObfuscator email="{post.author.email}" />
+    </p>
+    <p class="card-text tags">
+      <f:for each="{post.tags}" as="tag">
+        <span class="badge badge-pill badge-secondary">{tag.tagvalue}</span>
+      </f:for>
+    </p>
+  </div>
+</div>
+
+<h3><f:translate key="post.headline.comments" /></h3>
+<f:form action="ajax" name="comment" object="{comment}" arguments="{post: post}" id="comments">
+  <div class="form-group">
+    <f:form.textarea property="comment" class="form-control" id="comment-input" />
+  </div>
+  <f:form.submit value="{f:translate(key: 'post.show.button.submit-comment')}" class="btn btn-primary" id="comment-submit" />
+</f:form>
+
+<ul class="list-group" id="comment-list">
+  <f:for each="{post.comments}" as="comment" reverse="true">
+    <li class="list-group-item">
+      {comment.comment}
+      <span class="text-muted">(<f:format.date date="{comment.commentdate}" format="d/M/Y" />)</span>
+    </li>
+  </f:for>
+</ul>
+
+<script>
+var ajaxUrl = '<f:format.raw><f:uri.action action="comment" pageType="1550786448" controller="Ajax" arguments="{post: post}" /></f:format.raw>';
+</script>
+
+<f:link.action action="show" controller="Blog" arguments="{blog: blog}" class="btn btn-primary">
+  <i class="fas fa-list"></i>
+  <f:translate key="post.show.button.back-to-blog" />
+</f:link.action>
+</f:section>

@@ -1,0 +1,18 @@
+.tx-simpleblog hr {
+    margin-top: 40px;
+}
+
+.tx-simpleblog table td.uid {
+    text-align: right;
+    padding: 0 20px;
+    width: 1%;
+}
+
+.tx-simpleblog table td.left {
+    text-align: left;
+}
+
+.tx-simpleblog table td.right {
+    text-align: right;
+    font-weight: bold;
+}

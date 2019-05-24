@@ -1,0 +1,24 @@
+<h1>{headline}</h1>
+<f:form action="{action}" object="{post}" name="post" arguments="{blog: blog}" additionalAttributes="{role: 'form'}">
+    <div class="form-group">
+        <label><f:translate key="post.label.title" /></label>
+        <f:form.textfield property="title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label><f:translate key="post.label.content" /></label>
+        <f:form.textarea property="content" class="form-control" />
+    </div>
+<f:comment>
+<!--
+<div class="form-group">
+<label><f:translate key="post.label.author" /></label>
+<f:form.select options="{authors}" optionLabelField="fullname" prependOptionLabel="Select Author" prependOptionValue="0" property="author" class="form-control" />
+</div>
+-->
+</f:comment>
+    <div class="form-group">
+        <label><f:translate key="post.label.tags" /></label>
+        <f:form.select options="{tags}" optionLabelField="tagvalue" property="tags" size="5" multiple="1" class="form-control" />
+    </div>
+    <f:form.submit value="{submitmessage}" class="btn btn-primary" />
+</f:form>

@@ -1,0 +1,27 @@
+<html
+  xmlns:simpleblog="http://typo3.org/ns/ExtbaseBook/Simpleblog/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+<h1>{headline}</h1>
+<f:render partial="Error" arguments="{object: 'blog'}" />
+<f:form action="{action}" enctype="multipart/form-data" object="{blog}" name="blog" additionalAttributes="{role: 'form'}">
+    <div class="form-group">
+        <label><f:translate key="blog.label.title" /></label>
+        <f:form.textfield property="title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label><f:translate key="blog.label.description" /></label>
+        <f:form.textarea property="description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label><f:translate key="blog.label.image" /></label>
+        <div class="file-upload">
+            <simpleblog:form.upload property="image">
+                <f:if condition="{resource}">
+                    <f:image image="{resource}" alt="" width="50" />
+                </f:if>
+            </simpleblog:form.upload>
+        </div>
+    </div>
+    <f:form.submit value="{submitmessage}" class="btn btn-primary" />
+</f:form>

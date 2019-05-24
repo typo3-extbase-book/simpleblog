@@ -1,0 +1,15 @@
+<f:layout name="default" />
+<f:section name="content">
+<h1><f:translate key="post.headline.delete" /></h1>
+<p>
+    <f:translate key="post.delete.are-you-sure" arguments="{1: post.title, 2: blog.title}" />
+</p>
+<f:link.action action="show" controller="Blog" arguments="{blog: blog}" class="btn btn-primary">
+    <i class="fas fa-times-circle"></i>
+    <f:translate key="label.no" />
+</f:link.action>
+<f:link.action action="delete" arguments="{blog: blog, post: post}" class="btn btn-primary">
+    <i class="fas fa-check-circle"></i>
+    <f:translate key="label.yes" />
+</f:link.action>
+</f:section>

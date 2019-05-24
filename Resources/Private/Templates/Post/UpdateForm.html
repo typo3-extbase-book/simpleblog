@@ -1,0 +1,6 @@
+<f:layout name="default" />
+<f:section name="content">
+  <f:variable name="headline" value="{f:translate(key: 'post.headline.edit')}" />
+  <f:variable name="submitmessage" value="{f:translate(key: 'post.edit.button.submit-message')}" />
+  <f:render partial="Post/Form" arguments="{headline: headline, action: 'update', submitmessage: submitmessage, blog: blog, post: post, tags: tags}" />
+</f:section>

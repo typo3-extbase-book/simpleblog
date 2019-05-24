@@ -1,0 +1,56 @@
+<f:layout name="backend" />
+<f:section name="content">
+
+    <h1><f:translate key="backend.dashboard.index.headline" /></h1>
+
+    <div class="row">
+      <div class="col-md-6">
+          <p><strong><f:translate key="backend.dashboard.chart.last-comments" /></strong></p>
+          <canvas id="last-comments" style="width: 100%;"></canvas>
+      </div>
+      <div class="col-md-6">
+          <p><strong><f:translate key="backend.dashboard.chart.most-active-blogs" /></strong></p>
+          <canvas id="posts-per-blog" style="width: 100%;"></canvas>
+      </div>
+    </div>
+
+    <hr />
+
+    <p><strong><f:translate key="backend.dashboard.sub-headline.statistics" /></strong></p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <table class="table table-striped table-hover">
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.number-of-blogs" /></td>
+            <td class="right">{numberOfBlogs}</td>
+          </tr>
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.number-of-posts" /></td>
+            <td class="right">{numberOfPosts}</td>
+          </tr>
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.number-of-comments" /></td>
+            <td class="right">{numberOfComments}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="table table-striped table-hover">
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.last-blog-created" /></td>
+            <td class="right"><f:format.date format="%d %B %Y">{lastBlogCreated.crdate}</f:format.date></td>
+          </tr>
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.last-post-created" /></td>
+            <td class="right"><f:format.date format="%d %B %Y">{lastPostCreated.postdate}</f:format.date></td>
+          </tr>
+          <tr>
+            <td class="left"><f:translate key="backend.dashboard.last-comment-created" /></td>
+            <td class="right"><f:format.date format="%d %B %Y">{lastCommentCreated.commentdate}</f:format.date></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+</f:section>

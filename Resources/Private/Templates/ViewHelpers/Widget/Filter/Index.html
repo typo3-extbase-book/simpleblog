@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center input-group">
+    <div class="input-group-prepend" id="button-addon4">
+        <f:widget.link arguments="{char:'%'}" class="btn btn-small btn-link" useCacheHash="true">
+            [<f:translate key="label.all" />]
+        </f:widget.link>
+    </div>
+    <div class="input-group-append" id="button-addon4">
+        <f:for each="{letters}" as="letter">
+            <f:widget.link arguments="{char: letter}" class="btn btn-small btn-link" useCacheHash="true">
+                {letter}
+            </f:widget.link>
+        </f:for>
+    </div>
+</div>
+<f:renderChildren arguments="{contentArguments}" />

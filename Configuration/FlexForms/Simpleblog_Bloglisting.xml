@@ -1,0 +1,45 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>Blog Configuration</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+            <settings.blog.max>
+              <TCEforms>
+                <label>Max number of Blogs</label>
+                <config>
+                  <type>input</type>
+                  <size>2</size>
+                  <eval>int</eval>
+                  <default>10</default>
+                </config>
+              </TCEforms>
+            </settings.blog.max>
+		<!--
+            <switchableControllerActions>
+              <TCEforms>
+                <label>Type (Switchable Controller Actions)</label>
+                <config>
+                  <type>select</type>
+                  <items type="array">
+                    <numIndex index="0" type="array">
+                      <numIndex index="0">read only</numIndex>
+                      <numIndex index="1">Blog->list;Blog->show</numIndex>
+                    </numIndex>
+                    <numIndex index="1" type="array">
+                      <numIndex index="0">writable</numIndex>
+                      <numIndex index="1">Blog->list;Blog->show;Blog->deleteConfirm;Blog->delete</numIndex>
+                    </numIndex>
+                  </items>
+                </config>
+              </TCEforms>
+            </switchableControllerActions>
+		-->
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-01-06T18:20:51Z" product-name="simpleblog">
+		<header/>
+		<body>
+			<trans-unit id="tx_simpleblog_domain_model_blog">
+				<source>Blog</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_blog.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_blog.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_blog.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_blog.posts">
+				<source>Posts</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post">
+				<source>Post</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.postdate">
+				<source>Postdate</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.comments">
+				<source>Comments</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_post.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_comment.comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_comment.commentdate">
+				<source>Commentdate</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_author.fullname">
+				<source>Fullname</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_author.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_tag">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_simpleblog_domain_model_tag.tagvalue">
+				<source>Tagvalue</source>
+			</trans-unit>
+
+			<trans-unit id="blog.headline.list">
+				<source>Blog List</source>
+				<target>Blogs</target>
+			</trans-unit>
+			<trans-unit id="blog.headline.show">
+				<source>Show Blog</source>
+				<target>Blog Detailansicht</target>
+			</trans-unit>
+			<trans-unit id="blog.headline.delete">
+				<source>Delete Blog</source>
+				<target>Blog löschen</target>
+			</trans-unit>
+			<trans-unit id="blog.headline.add">
+				<source>Add New Blog</source>
+				<target>Blog erstellen</target>
+			</trans-unit>
+			<trans-unit id="blog.headline.edit">
+				<source>Edit Blog</source>
+				<target>Blog Bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="blog.list.button.add-blogs">
+				<source>Add Blogs</source>
+				<target>Neue Blogs erstellen</target>
+			</trans-unit>
+			<trans-unit id="blog.show.button.add-post">
+				<source>Add Post</source>
+				<target>Neuen Artikel erstellen</target>
+			</trans-unit>
+			<trans-unit id="blog.show.button.back-to-blog-list">
+				<source>Back to Blog list</source>
+				<target>Zurück zur Blog-Liste</target>
+			</trans-unit>
+			<trans-unit id="blog.add.button.submit-message">
+				<source>Create</source>
+				<target>Speichern</target>
+			</trans-unit>
+			<trans-unit id="blog.edit.button.submit-message">
+				<source>Update</source>
+				<target>Aktualisieren</target>
+			</trans-unit>
+			<trans-unit id="blog.label.title">
+				<source>Blog Title</source>
+				<target>Blog Name</target>
+			</trans-unit>
+			<trans-unit id="blog.label.description">
+				<source>Blog Description</source>
+				<target>Blog Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="blog.label.image">
+				<source>Blog Image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="blog.list.max-blogs-shown">
+				<source>Max %1$s Blogs are shown.</source>
+				<target>Es werden maximal %1$s Blogs angezeigt.</target>
+			</trans-unit>
+			<trans-unit id="blog.delete.are-you-sure">
+				<source>Are you sure you want to delete Blog "%s"?</source>
+				<target>Sind Sie sicher, dass der Blog "%s" gelöscht werden soll?</target>
+			</trans-unit>
+
+			<trans-unit id="post.headline.show">
+				<source>Show Post</source>
+				<target>Artikel anzeigen</target>
+			</trans-unit>
+			<trans-unit id="post.headline.delete">
+				<source>Delete Post</source>
+				<target>Artikel löschen</target>
+			</trans-unit>
+			<trans-unit id="post.headline.comments">
+				<source>Comments</source>
+				<target>Kommentare</target>
+			</trans-unit>
+			<trans-unit id="post.headline.add">
+				<source>Create New Post</source>
+				<target>Artikel erstellen</target>
+			</trans-unit>
+			<trans-unit id="post.headline.edit">
+				<source>Edit Post</source>
+				<target>Artikel bearbeiten</target>
+			</trans-unit>
+			<trans-unit id="post.add.button.submit-message">
+				<source>Create Post!</source>
+				<target>Speichern</target>
+			</trans-unit>
+			<trans-unit id="post.edit.button.submit-message">
+				<source>Update Post!</source>
+				<target>Aktualisieren</target>
+			</trans-unit>
+			<trans-unit id="post.show.button.submit-comment">
+				<source>Submit Comment</source>
+				<target>Kommentar speichern</target>
+			</trans-unit>
+			<trans-unit id="post.show.button.back-to-blog">
+				<source>Back to Blog</source>
+				<target>Zurück zum Blog</target>
+			</trans-unit>
+			<trans-unit id="post.label.title">
+				<source>Post Title</source>
+				<target>Artikel Name</target>
+			</trans-unit>
+			<trans-unit id="post.label.content">
+				<source>Content</source>
+				<target>Artikel</target>
+			</trans-unit>
+			<trans-unit id="post.label.tags">
+				<source>Tags</source>
+				<target>Tags</target>
+			</trans-unit>
+			<trans-unit id="post.delete.are-you-sure">
+				<source>Are you sure you want to delete post "%s", which belongs to x "%s"?</source>
+				<target>Are you sure you want to delete post "%s", which belongs to x "%s"?</target>
+			</trans-unit>
+
+			<trans-unit id="label.tweet">
+				<source>Tweet</source>
+				<target>Tweet</target>
+			</trans-unit>
+			<trans-unit id="label.author">
+				<source>Author</source>
+				<target>Autor</target>
+			</trans-unit>
+			<trans-unit id="label.search">
+				<source>Search</source>
+				<target>Suchen</target>
+			</trans-unit>
+			<trans-unit id="label.all">
+				<source>ALL</source>
+				<target>ALLE</target>
+			</trans-unit>
+			<trans-unit id="label.change-sort-order">
+				<source>Change Sort Order</source>
+				<target>Reihenfolge ändern</target>
+			</trans-unit>
+			<trans-unit id="label.no">
+				<source>NO</source>
+				<target>NEIN</target>
+			</trans-unit>
+			<trans-unit id="label.yes">
+				<source>YES</source>
+				<target>JA</target>
+			</trans-unit>
+			<trans-unit id="label.delete">
+				<source>DELETE</source>
+				<target>LÖSCHEN</target>
+			</trans-unit>
+			<trans-unit id="label.edit">
+				<source>EDIT</source>
+				<target>BEARBEITEN</target>
+			</trans-unit>
+			<trans-unit id="label.show">
+				<source>SHOW</source>
+				<target>ANZEIGEN</target>
+			</trans-unit>
+
+			<trans-unit id="flashmessage.blog.blog-created.headline">
+				<source>Blog created</source>
+				<target>Blog erstellt</target>
+			</trans-unit>
+			<trans-unit id="flashmessage.blog.blog-created.body">
+				<source>Thanks! A new Blog has been created successfully.</source>
+				<target>Vielen Dank! Der neue Blog wurde erfolgreich erstellt.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
